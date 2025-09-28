@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweety - Artisan Dessert Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+ 
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo"><i class="fas fa-cookie-bite"></i>Sweety</a>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home"><b>Home</b></a></li>
+                    <li><a href="#about"><b>About</b></a></li>
+                    <li><a href="#menu"><b>Menu</b></a></li>
+                    <li><a href="#gallery"><b>Gallery</b></a></li>
+                    <li><a href="#testimonials"><b>Testimonials</b></a></li>
+                    <li><a href="#contact"><b>Contact</b></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section-->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Artisan Desserts Crafted with Passion</h1>
+                <p>Indulge in a symphony of flavors at Sweety, where every dessert tells a story. Our master pastry chefs create edible works of art that delight all senses.</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn">Explore Menu</a>
+                    <a href="#contact" class="btn btn-outline">Book a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Story</h2>
+                <p>Discover the passion and craftsmanship behind every dessert we create</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Where Sweet Dreams Come True</h3>
+                    <p>Founded in 2015, Sweety began as a small patisserie with a big vision: to transform ordinary ingredients into extraordinary desserts that evoke emotion and create lasting memories.</p>
+                    <p>Our philosophy is simple: use only the finest ingredients, embrace both traditional techniques and innovative approaches, and pour heart into every creation.</p>
+                    <p>Each dessert is a carefully composed symphony of flavors, textures, and visual appeal, designed to transport you to a world of pure indulgence.</p>
+                    <a href="#menu" class="btn">View Our Menu</a>
+                </div>
+                <div class="about-image">
+                    <img src="/resturant/about.jpg" alt="Pastry Chef">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section  -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Menu</h2>
+                <p>Explore our exquisite selection of handcrafted desserts</p>
+            </div>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="cakes">Cakes</button>
+                <button class="category-btn" data-category="pastries">Pastries</button>
+                <button class="category-btn" data-category="icecream">Ice Cream</button>
+                <button class="category-btn" data-category="specialty">Specialty</button>
+            </div>
+            
+            <!-- All Menu Items -->
+            <div class="menu-items">
+                <!-- Cakes -->
+                <div class="menu-item" data-category="cakes">
+                    <div class="item-image">
+                        <img src="/resturant/c1.jpg" alt="Chocolate Symphony">
+                    </div>
+                    <div class="item-info">
+                        <h3>Chocolate Symphony <span class="item-price">$9.50</span></h3>
+                        <p>Layers of rich dark chocolate mousse, chocolate sponge, and a crunchy praline base</p>
+                        <div class="item-rating">★★★★★</div>
+                        <div class="item-order">
+                        
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="cakes">
+                    <div class="item-image">
+                        <img src="/resturant/c2.jpg" alt="Berry Delight">
+                    </div>
+                    <div class="item-info">
+                        <h3>Berry Delight <span class="item-price">$8.75</span></h3>
+                        <p>Vanilla sponge with fresh berry compote and light whipped cream</p>
+                        <div class="item-rating">★★★★☆</div>
+                        <div class="item-order">
+                            
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pastries -->
+                <div class="menu-item" data-category="pastries">
+                    <div class="item-image">
+                        <img src="/resturant/pc1.jpg" alt="Tiramisu Classico">
+                    </div>
+                    <div class="item-info">
+                        <h3>Tiramisu Classico <span class="item-price">$7.95</span></h3>
+                        <p>Traditional Italian dessert with espresso-soaked ladyfingers and mascarpone</p>
+                        <div class="item-rating">★★★★★</div>
+                        <div class="item-order">
+                         
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="pastries">
+                    <div class="item-image">
+                        <img src="/resturant/pc2.jpg" alt="Croissant Ensemble">
+                    </div>
+                    <div class="item-info">
+                        <h3>Croissant Ensemble <span class="item-price">$12.50</span></h3>
+                        <p>Flaky, buttery croissants with a selection of artisanal jams</p>
+                        <div class="item-rating">★★★★☆</div>
+                        <div class="item-order">
+                          
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ice Cream -->
+                <div class="menu-item" data-category="icecream">
+                    <div class="item-image">
+                        <img src="/resturant/ic22.jpg" alt="Salted Caramel Dream">
+                    </div>
+                    <div class="item-info">
+                        <h3>Salted Caramel Dream <span class="item-price">$6.95</span></h3>
+                        <p>Vanilla bean ice cream with swirls of salted caramel and chocolate chunks</p>
+                        <div class="item-rating">★★★★★</div>
+                        <div class="item-order">
+                           
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="icecream">
+                    <div class="item-image">
+                        <img src="/resturant/ic2.jpg" alt="Tropical Sorbet">
+                    </div>
+                    <div class="item-info">
+                        <h3>Tropical Sorbet <span class="item-price">$5.75</span></h3>
+                        <p>Refreshing blend of mango, passion fruit, and pineapple sorbets</p>
+                        <div class="item-rating">★★★★☆</div>
+                        <div class="item-order">
+                           
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Specialty -->
+                <div class="menu-item" data-category="specialty">
+                    <div class="item-image">
+                        <img src="/resturant/sp1.jpg" alt="Golden Opulence">
+                    </div>
+                    <div class="item-info">
+                        <h3>Golden Opulence <span class="item-price">$24.99</span></h3>
+                        <p>Edible gold leaf on dark chocolate ganache with gold-dusted truffles</p>
+                        <div class="item-rating">★★★★★</div>
+                        <div class="item-order">
+                        
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="specialty">
+                    <div class="item-image">
+                        <img src="/resturant/sp2.jpg" alt="Seasonal Fruit Tart">
+                    </div>
+                    <div class="item-info">
+                        <h3>Seasonal Fruit Tart <span class="item-price">$8.25</span></h3>
+                        <p>Buttery shortcrust filled with vanilla pastry cream and fresh seasonal fruits</p>
+                        <div class="item-rating">★★★★☆</div>
+                        <div class="item-order">
+                           
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section  -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sweet Gallery</h2>
+                <p>A visual journey through our delicious creations</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/resturant/t1.jpg" alt="Chocolate Cake">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/resturant/t2.jpg" alt="Donuts">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/resturant/t3.jpg" alt="Macarons">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/resturant/t5.jpg" alt="Ice Cream">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/resturant/t4.jpg" alt="Pastries">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/resturant/t6.jpg" alt="Red Velvet">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/resturant/t7.jpg" alt="Cupcakes">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/resturant/t8.jpg" alt="Cheesecake">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sweet Words</h2>
+                <p>What our customers say about their experience</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        The attention to detail in every dessert is remarkable. I've never tasted pastries this exquisite. The chocolate symphony cake was literally a work of art that tasted even better than it looked!
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="/resturant/teams/pp1.jpg" alt="Emma Wilson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Heba Willson</h4>
+                            <p>Food Critic</p>
+                            <div class="testimonial-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        We ordered our wedding cake from Sweety, and it was the highlight of our reception. Not only was it stunning, but the flavor was beyond anything we've ever experienced. Our guests are still talking about it!
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="/resturant/teams/pp2 (1).jpg" alt="James Rodriguez">
+                        </div>
+                        <div class="author-info">
+                            <h4>Ahmad helal</h4>
+                            <p>Bridegroomm</p>
+                            <div class="testimonial-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        As a pastry chef myself, I'm incredibly selective about desserts. Sweety exceeds all expectations. Their innovative flavor combinations and technical precision are truly inspiring.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="/resturant/teams/pp3.jpg" alt="Sophia Chen">
+                        </div>
+                        <div class="author-info">
+                            <h4>Ali gero</h4>
+                            <p>Professional Pastryy Chef</p>
+                            <div class="testimonial-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Visit Us</h2>
+                <p>We'd love to sweeten your day</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>123 Damascuse, Sweet City, SC 12345</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p> (936) 997-488567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>hello@sweety.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="contact-text">
+                                <h4>Opening Hours</h4>
+                                <p>Monday - Sunday: 8:00 AM - 10:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Sweety</h3>
+                    <p>Where every dessert is a masterpiece and every bite tells a story. Experience the art of patisserie at its finest.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#menu"><i class="fas fa-chevron-right"></i> Menu</a></li>
+                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Gallery</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> 123 Damascuse, Sweet City</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> (936) 997-488567</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> hello@sweety.com</a></li>
+                        <li><a href="#"><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 10:00 PM</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates on new desserts, special offers, and events.</p>
+                   
+                </div>
+            </div>
+            <div class="footer-bo">
+                <p>&copy; 2025 Sweety. All Rights Reserved.. | Designed with MARWA</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="/main.js"></script>
+</body>
+</html>
